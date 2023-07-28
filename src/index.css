@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}

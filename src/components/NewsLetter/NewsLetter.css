@@ -1,0 +1,145 @@
+:root{
+    --Dark_Slate_Grey: hsl(234, 29%, 20%);
+  --Charcoal_Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --Tomato: hsl(4, 100%, 67%)
+  }
+
+.newsContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 70%;
+    height: 80vh;
+    gap:1rem;
+    padding: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 1rem;
+    margin: 6rem
+}
+
+.newsInfo__Heading{
+    font-size: xxx-large;
+    font-weight: 700;
+    color: var(--Charcoal_Grey);
+}
+
+.newsInfo p {
+    color: var(--Charcoal_Grey);
+    margin: 0.5rem 0;
+}
+.newsInfo__list{
+    list-style-image: url(../../assets/images/icon-list.svg);
+    list-style-position: inside;
+    font-weight: 400;
+}
+.newsInfo__list__items{
+    margin: 0.89rem 0
+}
+
+.form__column{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.form__column .newsInfo__input_label{
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--Dark_Slate_Grey)
+}
+
+.form__column .newsInfo__input_email{
+    padding: 0.68rem;
+    border-radius: 4px;
+    border: 1px solid var(--Grey);
+}
+
+.newsInfo__submit_btn{
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    background-color: var(--Dark_Slate_Grey);
+    color: var(--White);
+    border: 0;
+    border-radius: 3px;
+    font-weight: 700;
+    
+    
+}
+
+.newsInfo .newsInfo__submit_btn:hover{
+    background-image: linear-gradient(to right,hsl(4deg 100% 55.04%), var(--Tomato));
+    box-shadow: 1px 2px 8px var(--Tomato);
+   
+}
+
+.form__column .newsInfo__input_email:focus{
+    border: 1px solid var(--Grey);
+    outline: 0;
+    
+}
+.form__column .newsInfo__errorSms{
+    color:rgb(248, 120, 120)
+}
+.error{
+    color:rgb(248, 120, 120) ;
+    border: 1px solid rgb(248, 120, 120) !important;
+    background-color:rgba(248, 120, 120,29%) ;
+
+}
+.error::placeholder{
+    color: rgb(248, 120, 120);
+}
+
+.form__lable{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribeSms{
+    max-width: 450px;
+    padding: 2rem;
+    background-color: var(--White);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.89rem;
+    border-radius: 1rem;
+}
+.subscribeSms__title{
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--Dark_Slate_Grey);
+}
+.subscribeSms p{
+    line-height: 1.64em;
+}
+
+@media only screen and (max-width: 375px){
+    .newsContainer{
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin: 0;
+        height: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    .newsInfo__banner{
+        
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        order: 1;
+        content: url(../../assets/images/illustration-sign-up-mobile.svg);
+    }
+    .newsInfo{
+        order: 2;
+        padding: 0 10px;
+    }
+    .main-container{
+        width: 100%;
+        display: block;
+    }
+}
+
