@@ -6,7 +6,7 @@
 
 Thanks for checking out this front-end coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+[Live Link](https://64c32276c0ad7627cdb18bec--lovely-puffpuff-535b53.netlify.app/)  check this projects.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 

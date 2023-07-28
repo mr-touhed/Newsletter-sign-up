@@ -10,7 +10,6 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     max-width: 70%;
-    height: 80vh;
     gap:1rem;
     padding: 1.5rem;
     justify-items: center;
